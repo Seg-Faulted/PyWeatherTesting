@@ -5,7 +5,7 @@ import requests
 import json
 
 # Load environment variables
-load_dotenv()
+
 
 # User input for location
 location = st.text_input("Location")
