@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from dotenv import load_dotenv
+
 import requests
 import json
 
@@ -26,7 +26,7 @@ if location:
         City, State, Country = location_parts
 
         # Geoapify API call
-        url = f'https://api.geoapify.com/v1/geocode/search?text={City}%2C%20{State}%2C%20{Country}&format=json&apiKey={os.getenv("API_KEY_1")}'
+        url = f'https://api.geoapify.com/v1/geocode/search?text={City}%2C%20{State}%2C%20{Country}&format=json&apiKey={os.getenv("d1e764a1fe174a7e99ba01f1dd3cf91a")}'
         response = requests.get(url)
         json_data = json.loads(response.text)
 
